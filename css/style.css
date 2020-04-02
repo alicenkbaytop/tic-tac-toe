@@ -1,0 +1,75 @@
+*{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color:  #0d0d0d;
+    font-weight: bold;
+}
+.container{
+    display: grid;
+    width: 456px;
+    height: 456px;
+    margin: 20px auto 20px auto;
+    background-color: #b30000;
+
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    
+    grid-template-areas:"item1 item2 item3"
+                        "item4 item5 item6"
+                        "item7 item8 item9";      
+}
+h1{
+    margin: 0px auto  0px auto;
+}
+.container > *{
+    background-color: #f2f2f2;
+}
+.item{
+    font-size: 100px;
+}
+.item:hover{
+    background: lightgray;
+    cursor: pointer;
+}
+#item-1{
+    grid-area: item1;
+}
+#item-2{  
+    grid-area: item2;
+}
+#item-3{   
+    grid-area: item3;
+}
+#item-4{   
+    grid-area: item4;
+}
+#item-5{   
+    grid-area: item5;
+}
+#item-6{   
+    grid-area: item6;
+}
+#item-7{   
+    grid-area: item7;
+}
+#item-8{   
+    grid-area: item8;
+}
+#item-9{  
+    grid-area: item9;
+}
+#player1, #player2{
+    margin: 7px auto 7px auto;
+}
+#reset-btn{
+    background-color: #f2f2f2;
+    border: #b30000 solid 2px;
+    border-radius: 4px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+#reset-btn:hover{
+    background: lightgray;
+}
